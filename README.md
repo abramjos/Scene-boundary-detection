@@ -30,16 +30,20 @@ Video augmented data is not required as long as you can provide a csv(with 'fram
 The script for training the model, files aug_final.mp4 and csv_aug_data.csv has to be provided. The model uses 'adam' as optimizer and 'categorical crossentropy' for calculating loss.
 
 Tensorboard and model checkpoints are used.
-
 ![](https://github.com/abramjos/Scene-boundary-detection/blob/master/model.jpg)
-
 ## datagen.py & epoch_generator.py
 Both the fles are to handle the image queue for the training purpose.
 epoch_generator.py ensures that the data fed into the model is equalized(equal no of postitive and negative dataset).
 
+
 # Testing
 ## test_model.py
   The script is to test the model performance using the generated model weights after training, ie the 'cut_video_final.h5'.
+  Provides a image stream of 10 images and corresponding prediction.
+## check_vid.py
+  'check_vid.py' will provide a visualization for a .csv with scene cut frames and a video corresponding to it.
+  As test_model.py it also provide a image stream of 10 images and corresponding prediction.
+
 
 # TO DO
 - [X] Augmentation for artificial lighting, blurness, speed, color-channel(hue,BW and channel switch)
