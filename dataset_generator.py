@@ -5,7 +5,7 @@ Video generator from multiple sample videos
 import glob
 import numpy as np 
 from math import ceil
-from augmentation import speed,shift_channel,shift_hue,bw,blur,artifical_flash
+from augmentation_helper import speed,shift_channel,shift_hue,bw,blur,artifical_flash
 from moviepy.editor import VideoFileClip
 
 #list of all functions for augmentation of videos

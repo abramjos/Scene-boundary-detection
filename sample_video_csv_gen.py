@@ -9,7 +9,7 @@ from augmentation import speed,shift_channel,shift_hue,bw,blur,artifical_flash
 from moviepy.editor import VideoFileClip,concatenate_videoclips
 import pandas as pd
 from math import ceil
-from dataset import video_generator
+from dataset_generator import video_generator
 
 #gathering the video samples to be augmented and generated
 sample_vid_set=glob.glob('out-clips/*.mp4')
