@@ -28,7 +28,7 @@ The model is an implementation of 10 frames/predcition model from the paper whic
 Video augmented data is not required as long as you can provide a csv(with 'frame_no,cut and transistion' colums) and video file. 
 ## model.py
 The script for training the model, files aug_final.mp4 and csv_aug_data.csv has to be provided. The model uses 'adam' as optimizer and 'categorical crossentropy' for calculating loss.
-![alt text](https://github.com/abramjos/Scene-boundary-detection/model.jpg)
+![alt text](https://github.com/abramjos/Scene-boundary-detection/blob/master/model.jpg)
 Tensorboard and model checkpoints are used.
 ## datagen.py & epoch_generator.py
 Both the fles are to handle the image queue for the training purpose.
