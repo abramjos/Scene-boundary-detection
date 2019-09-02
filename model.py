@@ -6,7 +6,7 @@ from keras.losses import categorical_crossentropy
 from keras.metrics import mean_squared_error,binary_accuracy,categorical_crossentropy,categorical_accuracy
 from keras.callbacks import ModelCheckpoint,EarlyStopping,TensorBoard
 
-from generator import datagen
+from datagen import datagen
 import numpy as np
 from tqdm import tqdm
 import pandas as pd
